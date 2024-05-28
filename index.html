@@ -16,8 +16,8 @@
         <h1>
             {{ message }}
         </h1>
-        <img :src="imgSrc" alt="" :class="imgOneDisplay" @click="changeImg(imgOneDisplay, imgTwoDisplay)">
-        <img :src="imgSrcTwo" alt="" :class="imgTwoDisplay" @click="changeImg(imgOneDisplay, imgTwoDisplay)">
+        <img :src="imgSrc" alt="" :class="imgOneDisplay" @click="changeImg('imgOneDisplay', 'imgTwoDisplay')">
+        <img :src="imgSrcTwo" alt="" :class="imgTwoDisplay" @click="changeImg('imgTwoDisplay', 'imgOneDisplay')">
         <input type="text" name="img source" id="img-src" v-model="imgSrc">
     </div>
 

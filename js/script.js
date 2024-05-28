@@ -12,17 +12,14 @@ createApp({
     },
 
     methods: {
-        changeImg(imgOne, imgTwo) {
-            if (imgOne === display-block) {
-                imgOne = display-none
-                imgTwo = display-block
-            } else if (imgTwo === display-block) {
-                imgOne = display-block
-                imgTwo = display-none
-            } else {
-                imgOne = display-block
-                imgTwo = display-none
-            }
+        changeImg(imgKey1, imgKey2) {
+                if (this[imgKey1] === "display-block") {
+                    this[imgKey1] = "display-none";
+                    this[imgKey2] = "display-block";
+                } else {
+                    this[imgKey1] = "display-block";
+                    this[imgKey2] = "display-none";
+                }
             }
         },
 }).mount('#app')
