@@ -6,15 +6,13 @@ createApp({
             message: 'Hello Vue!',
             imgSrc: "./img/cat-before.jpg",
             imgSrcTwo: "./img/cat-after.jpg",
-            imgOneDisplay: "",
-            imgTwoDisplay: "",
+            imgOneDisplay: "display-block",
+            imgTwoDisplay: "display-none",
         }
     },
 
     methods: {
-        changeImg(imgKey) {
-            let imgOne;
-            let imgTwo;
+        changeImg(imgOne, imgTwo) {
             if (imgOne === display-block) {
                 imgOne = display-none
                 imgTwo = display-block
